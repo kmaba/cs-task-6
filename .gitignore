@@ -1,8 +1,6 @@
-# task notes for working rhythm and staging visibility
-# next staged files presentation
-# - .gitignore
-# - workflow_instructions.txt
-# - commit_schedule.txt
+# local workflow notes
+workflow_instructions.txt
+commit_schedule.txt
 
 # python cache and env
 __pycache__/
