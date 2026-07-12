@@ -1,0 +1,31 @@
+# task notes for working rhythm and staging visibility
+# next staged files presentation
+# - .gitignore
+# - workflow_instructions.txt
+# - commit_schedule.txt
+
+# python cache and env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# sqlite and local runtime artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# editor and os files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# generated exports and logs
+*.log
+exports/
+tmp/

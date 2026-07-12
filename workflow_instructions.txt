@@ -1,0 +1,7 @@
+user instructions snapshot
+
+1) complete the database task against the provided marking key
+2) use lowercase punctuationless commit messages
+3) keep code comments concise and realistic
+4) commit in small portions per day
+5) maintain clear code understandability and efficient workflow
