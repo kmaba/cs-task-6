@@ -1,0 +1,43 @@
+project schedule
+
+week 0 holidays day 1
+- read task sheet and marking key
+- lock scenario and project scope
+- set up repository workflow
+
+week 0 holidays day 2
+- complete problem outline
+- complete detailed problem description
+- draft functional and non functional requirements
+
+week 0 holidays day 3
+- draft ethical legal security considerations
+- draft data quality and integrity discussion
+
+week 1 day 1 to day 2
+- produce erd with entities keys and relationships
+- write relational notation
+- build full data dictionary
+
+week 1 day 3
+- produce sql query list in plain english
+- produce software structure chart
+- produce function specifications
+
+week 2 day 1 to day 2
+- implement schema sql
+- implement sample data sql
+- validate referential integrity
+
+week 2 day 3 to week 3 day 1
+- develop python application modules
+- implement add search update delete features
+- add validation and exception handling
+
+week 3 day 2
+- add required sql report features
+- test with representative data
+
+week 3 day 3
+- complete evaluation
+- final documentation check and submission readiness
