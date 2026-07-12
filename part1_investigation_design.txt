@@ -1,0 +1,31 @@
+task 6 part 1 investigation and design
+
+project title
+trading card platform management system using python and sqlite
+
+chosen domain
+pokemon trading card game
+
+purpose of the software solution
+provide an internal admin tool so authorised staff can manage players cards decks tournaments and reporting without writing raw sql
+
+target users
+- platform administrators
+- support staff
+- tournament operations staff
+
+objectives
+- maintain accurate player card deck and tournament records
+- support fast search and maintenance operations
+- reduce manual errors with validation and controlled workflows
+- generate useful statistics for management decisions
+
+scope for this project
+- relational sqlite database with referential integrity
+- python console interface for create search update delete actions
+- reporting queries using joins aggregate functions group by and order by
+
+out of scope
+- public player facing website
+- payment processing
+- live multiplayer gameplay features
