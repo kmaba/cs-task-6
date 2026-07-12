@@ -1,0 +1,38 @@
+ethical legal security and data integrity considerations
+
+ethical considerations
+1) player privacy
+- personal data should only be collected when required for platform operations
+- access should follow least privilege principles for staff roles
+2) fairness and transparency
+- tournament records and player statistics should be accurate and traceable
+- admin edits should be attributable through audit friendly timestamps
+
+legal considerations
+1) privacy obligations
+- personal identifiers should be stored securely and not exported without authorisation
+2) intellectual property
+- card and set information must be sourced from permitted public references and used for educational project scope
+3) record handling
+- data retention and deletion requests should be supported by controlled update and delete workflows
+
+security considerations
+1) unauthorised access prevention
+- restrict admin features behind authentication at the application layer
+2) data protection
+- use parameterised sql queries to reduce injection risk
+- enforce foreign keys and constraints at database level
+3) resilience
+- maintain routine backup files of the sqlite database during development and testing
+
+data quality and integrity factors
+1) duplicate records
+- prevent duplicate players and card entries with unique constraints where appropriate
+2) incomplete information
+- use not null constraints for mandatory fields
+3) invalid input
+- apply validation for ranges formats and allowed values before database writes
+4) orphaned relationships
+- enforce referential integrity to stop invalid foreign key references
+5) consistency drift
+- use transactions for multi step write operations to keep related changes atomic
