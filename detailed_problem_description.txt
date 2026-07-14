@@ -1,0 +1,24 @@
+detailed problem description
+
+scenario
+administration staff need a desktop console tool to manage the trading card platform data. they must be able to add edit search and remove players cards decks and tournaments. the tool hides sql behind simple menus and validates user input to keep data clean.
+
+how it will be used
+- staff log into the admin console
+- create and maintain player accounts (name contact optional notes)
+- maintain card catalogue (name set rarity type attributes)
+- build and edit player decks by adding cards and quantities
+- create tournaments and register players for events
+- run reports such as tournament entries player collection sizes and deck lists
+
+assumptions and constraints
+- single-user local admin tool using sqlite for storage
+- no external authentication provider required for this project scope
+- data must be realistic but limited in volume for school testing
+- card data sourced from public references for accuracy
+
+acceptance criteria
+- all basic CRUD operations work for players cards decks and tournaments
+- referential integrity prevents orphaned records
+- sample data demonstrates queries and reports
+- application handles invalid input without crashing
