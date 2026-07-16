@@ -1,0 +1,71 @@
+@startuml
+' ERD for Trading Card Platform (SQLite compatible)
+' Entities: Player, Card, CardSet, Deck, DeckCard, Tournament, TournamentEntry
+
+entity "Player" as Player {
+  * player_id : INTEGER <<PK>>
+  --
+  name : TEXT
+  email : TEXT
+  joined_date : TEXT
+}
+
+entity "CardSet" as CardSet {
+  * set_id : INTEGER <<PK>>
+  --
+  name : TEXT
+  code : TEXT
+  release_date : TEXT
+}
+
+entity "Card" as Card {
+  * card_id : INTEGER <<PK>>
+  --
+  name : TEXT
+  set_id : INTEGER <<FK>>
+  rarity : TEXT
+  card_type : TEXT
+  mana_cost : TEXT
+}
+
+entity "Deck" as Deck {
+  * deck_id : INTEGER <<PK>>
+  --
+  player_id : INTEGER <<FK>>
+  name : TEXT
+  created_date : TEXT
+}
+
+entity "DeckCard" as DeckCard {
+  * deck_card_id : INTEGER <<PK>>
+  --
+  deck_id : INTEGER <<FK>>
+  card_id : INTEGER <<FK>>
+  quantity : INTEGER
+}
+
+entity "Tournament" as Tournament {
+  * tournament_id : INTEGER <<PK>>
+  --
+  name : TEXT
+  start_date : TEXT
+  format : TEXT
+}
+
+entity "TournamentEntry" as TournamentEntry {
+  * entry_id : INTEGER <<PK>>
+  --
+  tournament_id : INTEGER <<FK>>
+  player_id : INTEGER <<FK>>
+  registration_date : TEXT
+}
+
+' relationships with cardinalities
+Player ||--o{ Deck : owns
+Deck ||--o{ DeckCard : contains
+CardSet ||--o{ Card : includes
+Card ||--o{ DeckCard : appears_in
+Tournament ||--o{ TournamentEntry : has_entries
+Player ||--o{ TournamentEntry : registers
+
+@enduml
