@@ -1,29 +1,23 @@
-# local workflow notes
-workflow_instructions.txt
-commit_schedule.txt
+# keep only deliverable tracked
+*
+!.gitignore
+!part one/
+!part one/part1.docx
 
-# python cache and env
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
+# progression and local artifacts
 .venv/
 venv/
-
-# sqlite and local runtime artifacts
+__pycache__/
+*.py[cod]
+*.txt
+*.pdf
+email.txt
 *.db
 *.sqlite
 *.sqlite3
 *.db-journal
-
-# editor and os files
+*.log
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# generated exports and logs
-*.log
-exports/
-tmp/
